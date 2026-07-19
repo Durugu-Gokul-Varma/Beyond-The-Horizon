@@ -1,3 +1,5 @@
+/* General Styling */
+
 body {
 
     background-color: #0B1D33;
@@ -12,6 +14,8 @@ body {
 
 }
 
+
+/* Headings */
 
 h1 {
 
@@ -31,6 +35,8 @@ h2 {
 }
 
 
+/* Paragraph */
+
 p {
 
     text-align: center;
@@ -43,7 +49,11 @@ p {
 
 }
 
-/* Navigation Bar */
+
+/* ==========================
+   Navigation Bar
+   ========================== */
+
 
 nav {
 
@@ -53,21 +63,35 @@ nav {
 
     align-items: center;
 
-    padding: 20px 50px;
+    padding: 20px 60px;
 
     background-color: #07111F;
 
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
 }
 
+
+/* Logo */
 
 .logo {
 
-    font-size: 24px;
+    font-size: 28px;
 
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    color: #1E88E5;
 
 }
 
+
+/* Navigation Menu */
 
 nav ul {
 
@@ -77,8 +101,21 @@ nav ul {
 
     gap: 30px;
 
+    margin: 0;
+
+    padding: 0;
+
 }
 
+
+nav ul li {
+
+    display: inline-block;
+
+}
+
+
+/* Navigation Links */
 
 nav ul li a {
 
@@ -86,19 +123,104 @@ nav ul li a {
 
     text-decoration: none;
 
-    font-size: 16px;
+    font-size: 17px;
+
+    transition: 0.3s;
 
 }
-nav ul li {
 
-    display: inline-block;
 
-}
-/* Updated navbar styling */
-
+/* Hover Effect */
 
 nav ul li a:hover {
 
     color: #1E88E5;
+
+}
+
+
+/* Underline Animation */
+
+nav ul li a::after {
+
+    content: "";
+
+    display: block;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #1E88E5;
+
+    transition: width 0.3s;
+
+}
+
+
+nav ul li a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* ==========================
+   Hero Section
+   ========================== */
+
+
+.hero {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+/* Buttons (for future use) */
+
+button {
+
+    background-color: #1E88E5;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: #1565C0;
+
+}
+
+
+/* Images */
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
 
 }
