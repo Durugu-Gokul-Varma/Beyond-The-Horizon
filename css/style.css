@@ -89,6 +89,11 @@ nav ul li a {
     font-size: 16px;
 
 }
+nav ul li {
+
+    display: inline-block;
+
+}
 
 
 nav ul li a:hover {
