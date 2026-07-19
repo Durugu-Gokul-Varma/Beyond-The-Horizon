@@ -42,3 +42,57 @@ p {
     margin: auto;
 
 }
+
+/* Navigation Bar */
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #07111F;
+
+}
+
+
+.logo {
+
+    font-size: 24px;
+
+    letter-spacing: 2px;
+
+}
+
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+
+}
+
+
+nav ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+}
+
+
+nav ul li a:hover {
+
+    color: #1E88E5;
+
+}
